@@ -79,7 +79,8 @@ public class MavenProjectProperties implements ProjectProperties {
    * @param log the Maven {@link Log} to log messages during Jib execution
    * @return a MavenProjectProperties from the given project and logger.
    */
-  static MavenProjectProperties getForProject(MavenProject project, MavenSession session, Log log) {
+  public static MavenProjectProperties getForProject(
+      MavenProject project, MavenSession session, Log log) {
     return new MavenProjectProperties(project, session, log);
   }
 
